@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/,*\s/).uniq
+    @emails.split(/,*\s/).uniq   # removes 0 to x numbers of commas and a whitespace
   end
 end
