@@ -11,6 +11,6 @@ class EmailParser
   end
 
   def parse
-    @emails.split.chomp
+    @emails.split.each {|email| email.chomp(",")}
   end
 end
